@@ -1,4 +1,4 @@
-![Barter Flow](/static/img/barter/barter-logo.png "Bridge Flow")  
+![Barter Flow](/img/barter/barter-logo.png "Bridge Flow")  
 # Overview
 
 ## Background

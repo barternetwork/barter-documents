@@ -1,4 +1,4 @@
-![Barter Flow](/img/barter/barter-logo.png "Bridge Flow")  
+![Barter Flow](/static/img/barter/barter-logo.png "Bridge Flow")  
 # Overview
 
 ## Background
@@ -7,24 +7,26 @@ For a long time, the cross-chain exchange market has been dominated by centraliz
 
 ## Introduction
 
-Barterswap is a truly decentralized cross-chain exchange deployed on [MAP Protocol](https://www.maplabs.io/). Our mission is to revolutionize the cross-chain status-quo and forge a genuinely decentralized cross-chain exchange with maximum security, minimum fee, and the smoothest cross-chain experience for the crypto community.
-
-The critical difference between Barterswap and other cross-chain exchanges is that Barterswap uses an innovative cross-chain model. __Users can add multi-chain liquidity and exchange between them directly using a genuinely decentralized way.__
+Barterswap is a truly decentralized cross-chain exchange built on [MAP Protocol](https://www.maplabs.io/). Our mission is to revolutionize the cross-chain status-quo and forge a genuinely decentralized cross-chain exchange with maximum security, minimum cost, and the smoothest cross-chain experience for the crypto community.
 
 ## Features
 
-### One-Step Exchange
+### All Chains Supported
 
-Just one click to complete the whole cross-chain exchange process.
+As long as a blockchain is smart contract friendly, Barterswap will support it, EVM or non-EVM. This lets users swap assets from different chains frictionlessly.
+
+### Maximum Security
+
+Barterswap offers the highest level of security that no other cross-chain DEXs is able to offer.
+
+### Lowest Fee Rate
+
+Barterswap guarantees the lowest cost for cross-chain swap. By the lowest we mean the truly lowest, not relying on token incentives to compensate for the cost.
+
+### One Step Swap
+
+Barterswap wants to give users the best possible experience, users are able to complete complex cross-chain exchanges in just one step. 
 
 ### Trade Path Optimization
 
-Barterswap Aggregator adopts the most advanced price tracing algorithm and calculates the best cross-chain route based on most DEXs.
-
-### Blockchain Infrastructure Security
-
-Barterswap is built upon MAP Protocol, the only cross-chain infrastructure supporting all chains with top-tier cross-chain security technology.
-
-### Cost-Efficiency Optimization
-
-The superior efficiency of MAP Protocol leads to substantially low cross-chain costs. Barterswap has the lowest cost compared to other major cross-chain exchange projects based on the direct multi-coin cross-chain exchange mechanism.  
+Barter Aggregator adopts the most advanced price tracing algorithm and calculates the best cross-chain route based on most DEXs.

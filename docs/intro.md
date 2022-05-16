@@ -27,7 +27,7 @@ A set of smart contracts that integrate all popular DEX's core contracts to perf
 ## Barter Bridge
 
 Barter Bridge uses MAP Protocol as the underlying infrastructure. It is responsible for bridging the source token from the source chain to the MAP representation of the token on the MAP relay chain and vice-versa.
-![Barter Bridge](/img/barter/bridge-detail.png "Bridge Illustration")
+![Barter Bridge](/static/img/barter/bridge-detail.png "Bridge Illustration")
 The above diagram shows the complete exchange process of Alice swapping 100 $ETH on Ethereum for 100 $ETH on Solana. Let's see how Barter Bridge works internally through Map Protocol.
 
 1. Barter will lock the $ETH to the vault contract deployed on Ethereum.
@@ -48,7 +48,7 @@ For more information on vault, messenger, and light-client, please see [MAP Prot
 
 Barter Core is an exchange implementation deployed on MAP Protocol's Relay Chain; it allows the direct exchange of tokens from different chains.
 
-![Barter Core](/img/barter/core.png "Bridge Core")
+![Barter Core](/static/img/barter/core.png "Bridge Core")
 
 #### Adding Liquidity
 

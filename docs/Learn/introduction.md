@@ -7,7 +7,7 @@ For a long time, the cross-chain exchange market has been dominated by centraliz
 
 ## Introduction
 
-Barterswap is a truly decentralized cross-chain exchange built on [MAP Protocol](https://www.maplabs.io/). Our mission is to revolutionize the cross-chain status-quo and forge a genuinely decentralized cross-chain exchange with maximum security, minimum cost, and the smoothest cross-chain experience for the crypto community.
+Barterswap is the ultimate decentralized cross-chain exchange. Our mission is to revolutionize the cross-chain status-quo and forge a genuinely decentralized cross-chain exchange with maximum security, the lowest fee rate, and the smoothest cross-chain experience across all chains for the crypto community.
 
 ## Features
 

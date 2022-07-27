@@ -11,9 +11,9 @@ const config = {
     locales: ["en"],
   },
 
-  title: 'Barterswap Docs',
-  tagline: 'Documentation and Tutorials for Barterswap',
-  url: 'https://docs.barterswap.network',
+  title: 'Barter Network Docs',
+  tagline: 'Documentation and Tutorials for Barter Network',
+  url: 'https://docs.barternetwork.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,7 +49,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'Barterswap Logo',
+          alt: 'Barter Logo',
           src: 'img/logo.png',
         },
         items: [
@@ -67,7 +67,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/barter_swap',
+                href: 'https://twitter.com/BarterNetworkio',
               },
               {
                 label: 'Telegram',
@@ -77,7 +77,7 @@ const config = {
           },
 
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Barterswap foundation ltd. All Rights Reseved`,
+        copyright: `Copyright © ${new Date().getFullYear()} Barter Network Ltd. All Rights Reseved`,
       },
       prism: {
         theme: lightCodeTheme,

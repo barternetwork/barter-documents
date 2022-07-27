@@ -1,2 +1,2 @@
 # Barter Cross-chain Exchange Service
-coming soon...
+This page is still under development! Stay tuned

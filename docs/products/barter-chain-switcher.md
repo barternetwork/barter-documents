@@ -10,4 +10,4 @@ By integrating Barter Chain Switcher into multi-chain GameFi, users no longer ne
 *Note: Barter Chain Switcher is entirely built on Barter Bridge, they are pretty much interchangeable.*
 
 ## How Barter Chain Switcher Works
-Please refer to [Barter Bridge](/Products/barter-bridge.md).
+Please refer to [Barter Bridge](/Products/barter-bridge).

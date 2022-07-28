@@ -9,10 +9,10 @@ Barter Network aims to help transform crypto assets movement across all blockcha
 
 ## Products
 Barter offers four cutting-edge products, in the form of SDK, to Web3 applications:
-1. [Barter Omnichain Payment System](/Products/BOPS)
-2. [Barter Cross-chain Exchange Service](/Products/BCES)
-3. [Barter Chain Switcher](/Products/barter-bridge)
-4. [Barter Shared Cross-chain Liquidity Pool](/Products/BSLP)
+1. [Barter Omnichain Payment System](http://docs.barternetwork.io/products/BOPS)
+2. [Barter Cross-chain Exchange Service](http://docs.barternetwork.io/products/BCES)
+3. [Barter Chain Switcher](http://docs.barternetwork.io/products/barter-bridge)
+4. [Barter Shared Cross-chain Liquidity Pool](http://docs.barternetwork.io/products/BSLP)
 
 With the help of these products, Web3 applications is able to give their user a seamless and secure cross-chain experience. 
 ## Features

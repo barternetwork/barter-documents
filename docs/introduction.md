@@ -23,7 +23,7 @@ With the help of these products, Web3 applications is able to give their user a 
 Barter Network is built upon [MAP Protocol](https://www.maplabs.io/) - the most secure and comprehensive cross-chain infrastructure in the industry, which empower Barter with four amazing features.
 
 #### ___Maximum Security___
-Barter guarantees the highest level of security for cross-chain verification. 
+Barter guarantees blockchain-level security for cross-chain verification. 
 #### ___All Chains Supported___
 Barter supports crypto assets movement across all blockchains, EVM or non-EVM, as long as they are smart contract compatible.
 #### ___Instant Confirmation___

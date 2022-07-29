@@ -14,12 +14,12 @@ However, BCES supports not only stablecoin exchange, users can exchange any type
 ## How BCES works
 There are two ways of exchanging using BCES:
 ### **1. Direct Exchange**  
-Directly exchange one token for another as long as our liquidity pool hold that certain token pair. Also, Web3 applications are free to add any liquidity pair they want through our [Barter Shared Cross-chain Liquidity Pool](/Products/BSLP). 
+Direct exchange is the default way of exchanging cross-chain assets, it allows users directly exchange one token for another through our liquidity pool. Also, Web3 applications are free to add any liquidity pair of their interests through our [Barter Shared Cross-chain Liquidity Pool](/Products/BSLP). 
 
 ![Core Flow](/img/barter/core.png "Core Flow")
 
 ### **2. Aggregation Exchange**
-No certain liquidity pair? No problem, BCES also offers a cross-chain exchange aggregator. Our aggregator gathers all the liquidities from all major DEXs from different blockchains and uses an advanced price tracing algorithm to find the best cross-chain exchange route.
+However, it is nearly impossible to hold every token pair in our liquidity pool, thus, in case users want to exchange token pair that is not in our liquidity pool, we have a cross-chain aggregator that gathers all liquidities from major DEXs on different blockchains and uses an advanced route-finding algorithm to find the best cross-chain exchange route for any token pair. 
 
 ![Agg Flow](/img/barter/aggregator.png "Aggg Flow")
 

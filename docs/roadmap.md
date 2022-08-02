@@ -31,7 +31,7 @@
   - Develop messenger - an inter-chain program that sends messages across different chains.
 - Launch BarterJS SDK that connects to supported chains.
 - Testing, testing and tesing.
-- Smart
+- Smart contract audit.
 
 
 #### 2023 Q1 and further

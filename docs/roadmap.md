@@ -19,26 +19,25 @@
 
 #### 2022 Q3
 
-- Develop Barter Bridge that connects to Ethereum, Harmony, Near, and a few other chains that are TBD
+- Develop Barter Bridge that connects to BSC, and a few other chains that are TBD
 - Develop Barter Cross-chain Exchange, Barter Omnichain Payment System, Barter Chain Switcher and Barter Shared Cross-chain Liquidity Pool.
 - Build Barter Aggregator that optimizes cross-chain route-finding between those chains.
   - Adjust smart router to support cross-chain exchange route-finding among all routes from different chains. 
 
 #### 2022 Q4
 
-- Launch Barter Bridge which is built upon Map Protocol that connects to Ethereum, Near, Harmony, and a few other chains that are TBD.
+- Launch Barter Bridge which is built upon Map Protocol that connects to Ethereum and few other chains that are TBD.
   - Develop vault contracts.
   - Develop messenger - an inter-chain program that sends messages across different chains.
-- Launch Barter Cross-chain Exchange Service, Barter Omnichain Payment System, Barter Chain Switcher and Barter Shared Cross-chain Liquidity Pool in the form of SDKs that connects to supported chains.
+- Launch BarterJS SDK that connects to supported chains.
+- Testing, testing and tesing.
+- Smart
 
 
 #### 2023 Q1 and further
 Keep connecting to major blockchains, each blockchain requires the following work:
-- cross-chain aggregator.
-- cross-chain bridge.
-    - onchain vault smart contracts.
-    - inter-chain messenger smart contracts.
-- cross-chain exchange.
-- omnichain payment system based on cross-chain exchange.
-- chain switcher based on barter bridge.
-- shared cross-chain liquidity based on cross-chain exchange.
+- Extend cross-chain aggregator to support more chains.
+- Write on-chain vault smart contracts and inter-chain messenger program for each blockchain connected.
+- Write one-step aggregation exchange smart contracts for each blockchain connected.
+- Extend BarterJS SDK to support more blockchains.
+- Testing and smart contract audit.

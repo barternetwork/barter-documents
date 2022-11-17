@@ -14,4 +14,4 @@
 ## Income Usage
 * Revenue is mainly distributed to LP and bridge messenger contributors.  
 
-* Part of the income will be used as Barter Fund to invest in innovative projects and support research and development, and marketing expenses. 
+* Part of the income will be used as Butter Fund to invest in innovative projects and support research and development, and marketing expenses. 

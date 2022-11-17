@@ -11,14 +11,14 @@ const config = {
     locales: ["en"],
   },
 
-  title: 'Barter Network Docs',
-  tagline: 'Documentation and Tutorials for Barter Network',
-  url: 'https://docs.barternetwork.io',
+  title: 'Butter Network Docs',
+  tagline: 'Documentation and Tutorials for Butter Network',
+  url: 'https://docs.butternetwork.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'barterswap-docs', // Usually your repo name.
+  projectName: 'butterswap-docs', // Usually your repo name.
 
 
   presets: [
@@ -49,7 +49,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'Barter Logo',
+          alt: 'Butter Logo',
           src: 'img/logo.png',
         },
         items: [
@@ -67,17 +67,17 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/BarterNetworkio',
+                href: 'https://twitter.com/ButterNetworkio',
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/Barterswap',
+                href: 'https://t.me/Butterswap',
               },
             ],
           },
 
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Barter Network Ltd. All Rights Reseved`,
+        copyright: `Copyright © ${new Date().getFullYear()} Butter Network Ltd. All Rights Reseved`,
       },
       prism: {
         theme: lightCodeTheme,

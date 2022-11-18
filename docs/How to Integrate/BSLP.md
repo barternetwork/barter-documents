@@ -1,2 +1,2 @@
 # Butter Shared Cross-chain Liquidity Pool
-This page is still under development! Stay tuned
+Please check [barterjs-sdk](https://github.com/butternetwork/butterjs-sdk) for integration guide!

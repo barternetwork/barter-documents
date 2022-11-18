@@ -1,5 +1,4 @@
 # Butter Bridge
-This page is still under development! Stay tuned
 
 ## Table of Contents
 1. [Installation](#installation)

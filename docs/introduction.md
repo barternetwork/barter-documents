@@ -22,8 +22,8 @@ With the help of these products, Web3 applications is able to give their user a 
 ## Features
 Butter Network is built upon [MAP Protocol](https://www.maplabs.io/) - the most secure and comprehensive cross-chain infrastructure in the industry, which empower Butter with four amazing features.
 
-#### ___Maximum Security___
-Butter guarantees blockchain-level security for cross-chain verification. 
+#### ___Provably Secure___
+Butter guarantees blockchain-level security by using light-client technology for cross-chain verification. 
 #### ___All Chains Supported___
 Butter supports crypto assets movement across all blockchains, EVM or non-EVM, as long as they are smart contract compatible.
 #### ___Instant Confirmation___

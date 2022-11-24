@@ -11,3 +11,4 @@ By integrating Butter Chain Switcher into multi-chain GameFi, users no longer ne
 
 ## How Butter Chain Switcher Works
 Please refer to [Butter Bridge](/Products/butter-bridge).
+

@@ -1,3 +1,3 @@
 
-# Barter Omnichain Payment System
-This page is still under development! Stay tuned
+# Butter Omnichain Payment System
+Please check [barterjs-sdk](https://github.com/butternetwork/butterjs-sdk) for integration guide!

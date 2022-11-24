@@ -1,2 +1,2 @@
-# Barter Cross-chain Exchange Service
-This page is still under development! Stay tuned
+# Butter Cross-chain Exchange Service
+Please check [barterjs-sdk](https://github.com/butternetwork/butterjs-sdk) for integration guide!

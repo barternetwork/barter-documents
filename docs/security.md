@@ -1,6 +1,6 @@
 # Security
 ## Background
-Security has always been the biggest critique in the whole cross-chain industry. Barter fully understands the importance of security and that is why we use **MAP Protocol** as our underlying cross-chain infrastructure.   
+Security has always been the biggest critique in the whole cross-chain industry. Butter fully understands the importance of security and that is why we use **MAP Protocol** as our underlying cross-chain infrastructure.   
 The core of cross-chain is the alignment of the ledger across different blockchains. Most cross-chain solutions leave this job to third-party external validators such as MPC(Multi-party computing) nodes and trusted Oracles, which is an off-chain trust intermediary similar to traditional banks, this is not a decentralized solution. While light-client relies on the blockchain itself for security and inherits the decentralized nature of blockchains. 
 
 ## About MAP Protocol

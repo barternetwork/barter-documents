@@ -5,8 +5,9 @@ sidebar_position: 4
 This section includes the detail of all the request&response types needed while using the SDK.
 
 ## Request Types
-All the request types needed to interact with the SDK
+All the request data structure needed to interact with the SDK
 ### `BridgeRequestParam`
+The request parameter data structure for bridge action.
 ```typescript
 export type BridgeRequestParam = {
   fromAddress: string;
@@ -20,7 +21,7 @@ export type BridgeRequestParam = {
 ```
 
 ### `SwapRequestParam`
-The parameters needed for cross-chain swap action
+The request parameter data structure for swap action.
 ```typescript
 export type SwapRequestParam = {
   fromAddress: string;
@@ -44,13 +45,15 @@ export type ButterTransactionOption = {
   gasPrice?: string;
 };
 ```
-Whenever send a transaction from Near Protocol, you have to provide `NearNetworkConfig` with keystore provided or `WalletConnection` object
+`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. If you are using ethers.js, provider the [`Signer`](https://docs.ethers.org/v5/api/signer/) object. If your application choose to use web3.js, please provide [`Eth`](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html) object in order to send a transaction.
+
+`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide [`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig) with keystore provided or [`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/) object
 ```typescript
 export type NearProviderType = NearNetworkConfig | WalletConnection;
 ```
 
 ## Response Types
-All the response type needed interacting the SDK
+All the response data structure when interacting the SDK
 ### Vault
 #### `VaultBalance`
 ```typescript
@@ -104,7 +107,7 @@ export interface ButterTransactionResponse {
   promiReceipt?: PromiEvent<Web3TransactionReceipt>; // only when use web3.js
 }
 ```
-`promiReceipt` is only available when you are using web.js.
+[`promiReceipt`](https://web3js.readthedocs.io/en/v1.2.11/callbacks-promises-events.html) is only available when you are using web.js.
 
 #### `ButterTransactionReceipt`
 Transaction receipt
@@ -114,7 +117,7 @@ export interface ButterTransactionReceipt {
   from: string;
   gasUsed: string;
   transactionHash: string;
-  logs: Array<Log> | string[]; // string[] for near logs
+  logs: Array<Log> | string[]; // string[] for Near logs
   blockHash?: string;
   blockNumber?: number;
   success?: boolean; // 1 success, 0 failed

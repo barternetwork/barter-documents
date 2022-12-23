@@ -29,13 +29,14 @@ export type ButterTransactionOption = {
 type NearProviderType = NearNetworkConfig | WalletConnection;
 
 ```
-`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. if you are using ethers.js, provider the `Signer` or `Provider`(view only) object. If your application choose to use web3.js, please provide `Eth` object in order to send a transaction.
+`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. If you are using ethers.js, provider the [`Signer`](https://docs.ethers.org/v5/api/signer/) object. If your application choose to use web3.js, please provide [`Eth`](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html) object in order to send a transaction.
 
-`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide `NearNetworkConfig` with keystore provided or `WalletConnection` object
+`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide [`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig) with keystore provided or [`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/) object
 ## Response
-Please refer to [response type](http://google.ca/).
+Please refer to [response type](/SDKs/types#buttertransactionresponse).
 
 ## Gas estimation
+Estimate the gas cost for bridge action.
 ```typescript
 async function gasEstimateBridgeToken({
     fromAddress,

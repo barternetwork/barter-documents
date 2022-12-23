@@ -17,8 +17,8 @@ export type SwapRequestParam = {
     options: ButterTransactionOption;
 };
 ```
-`swapRouteStr`: optimal cross-chain swap route based on token and amount provided. You can find how to get the best route [here](http://google.ca/)
-<br/>
+`swapRouteStr`: optimal cross-chain swap route based on token and amount provided. Please see how to [get the best route](routes#get-the-best-route)
+
 `ButterTransactionOption` contains all the necessary information required to complete a transaction:
 
 ```typescript
@@ -32,13 +32,15 @@ export type ButterTransactionOption = {
 // when send transaction from Near Protocol
 type NearProviderType = NearNetworkConfig | WalletConnection;
 ```
-`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. if you are using ethers.js, provider the `Signer` or `Provider`(view only) object. If your application choose to use web3.js, please provide `Eth` object in order to send a transaction.
-<br/>
-`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide `NearNetworkConfig` with keystore provided or `WalletConnection` object
+`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. If you are using ethers.js, provider the [`Signer`](https://docs.ethers.org/v5/api/signer/) object. If your application choose to use web3.js, please provide [`Eth`](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html) object in order to send a transaction.
+
+`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide [`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig) with keystore provided or [`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/) object
+
 ## Response
-Please refer to [response type](http://google.ca/).
+Please refer to [response type](types#buttertransactionresponse).
 
 ## Gas estimation
+Estimate the gas cost of swap transaction
 ```typescript
 async function gasEstimateSwap({
     fromAddress,

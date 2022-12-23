@@ -3,7 +3,6 @@ sidebar_position: 2
 ---
 # Entites
 Here you can find all entities defined in the SDK.
-
 ## `BaseCurrency`
 _BaseCurrency_ is an abstract class covers any fungible token including native coin, standard token and other chain-native currencies.
 ```typescript

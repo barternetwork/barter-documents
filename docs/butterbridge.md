@@ -37,4 +37,4 @@ However, it is nearly impossible to hold every token pair in our liquidity pool,
 #### **3. Butter Swap workflow**
 By combining direct exchange and aggregation exchange, Butter Swap provides the most convenient and comprehensive cross-chain exchange service. Here is the overall workflow of Butter Swap.
 
-![Butter Exchange Flow](/img/butter/flow.png "BCES Flow")
+![Butter Swap Flow](/img/butter/flow.png "BCES Flow")

@@ -6,7 +6,7 @@ Butter has built in smart router that will aggregate all the major dex's liquidi
 
 ## Get the best route
 ```typescript
-async function getBestRouteStr(
+async function getBestRoute(
     fromToken: BaseCurrency,
     toToken: BaseCurrency,
     amountIn: string
@@ -32,7 +32,7 @@ The output would be:
     {
       "chainId":"56",
       "amountIn":"1",
-      "amountOut":"159.366689922754163277",
+      "amountOut":"259.366689922754163277",
       "path":[
         {
           "id":"0xc39F0738AD5852646c0C50d8e0D0F2216a9b58C8",
@@ -68,8 +68,8 @@ The output would be:
     {
       "chainId":"22776",
       "dexName":"",
-      "amountIn":"159.366689922754163277",
-      "amountOut":"159.266689922754163277",
+      "amountIn":"259.366689922754163277",
+      "amountOut":"259.266689922754163277",
       "tokenIn":{
         "address":"0x424D3bcdC96F42aC919F276D7D4f6C94f24e0703",
         "name":"map usdc",
@@ -91,9 +91,9 @@ The output would be:
   ],
   "targetChain":[
     {
-      "chainId":"80001",
-      "amountIn":"159.266689922754163277",
-      "amountOut":"160.99208763031242886",
+      "chainId":"137",
+      "amountIn":"259.266689922754163277",
+      "amountOut":"260.99208763031242886",
       "path":[
         {
           "id":"0x60004720A9edeD2795A7429B11Dd8BcCE1A2358e",

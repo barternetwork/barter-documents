@@ -26,6 +26,6 @@ Butter supports crypto assets movement across all blockchains, EVM or non-EVM, a
 Butter ensures the cross-chain confirmation speed is only related to each chain's block time.
 
 #### ___Effortless Integration___
-Butter provides easy-to-integrate SDKs to help Web3 application gain access to cross-chain functionality.
+Butter provides easy-to-integrate SDK to help Web3 application gain access to cross-chain functionality.
 
 *We are extremely confident in providing the most secure cross-chain solution to the Web3 world, please click [here](/security) to learn more.*

@@ -11,7 +11,7 @@ A peer-to-peer decentralized payment systems are the origin of blockchain techno
 Butter Network aims to help transform crypto assets movement across all blockchains seamlessly and securely. Essentially, Butter provides a set of cutting-edge products to Web3 applications and let their users experience assets cross-chain without even realizing it.
 
 ## Butter Bridge/Swap
-Butter offers the most cutting-edge assets bridge/swap service. What is more exciting is that we provide easy-to-use [Butter SDK](/SDKs/quickstart.md) so that everyone can effortlessly integrate cross-chain assets bridge/swap functionality into their applications.
+Butter offers the most cutting-edge assets bridge/swap service. What is more exciting is that we provide easy-to-use [Butter SDK](/SDK/quickstart.md) so that everyone can effortlessly integrate cross-chain assets bridge/swap functionality into their applications.
 
 ## Features
 Butter Network is built upon [MAP Protocol](https://www.maplabs.io/) - the most secure and comprehensive cross-chain infrastructure in the industry, which empower Butter with four amazing features.
@@ -23,6 +23,6 @@ Butter supports crypto assets movement across all blockchains, EVM or non-EVM, a
 #### ___Instant Confirmation___
 Butter ensures the cross-chain confirmation speed is only related to each chain's block time.
 #### ___Effortless Integration___
-Butter provides easy-to-integrate SDKs to help Web3 application gain access to cross-chain functionality.
+Butter provides easy-to-integrate SDK to help Web3 application gain access to cross-chain functionality.
 
 *We are extremely confident in providing the most secure cross-chain solution to the Web3 world, please click [here](/security) to learn more.*

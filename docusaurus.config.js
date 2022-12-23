@@ -8,7 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "zh-CN"],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      }
+    },
   },
 
   title: 'Butter Network Docs',
@@ -18,7 +23,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'butterswap-docs', // Usually your repo name.
+  projectName: 'butter-documents', // Usually your repo name.
 
 
   presets: [
@@ -71,7 +76,7 @@ const config = {
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/Butterswap',
+                href: 'https://t.me/butternetwork',
               },
             ],
           },

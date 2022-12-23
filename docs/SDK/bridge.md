@@ -33,7 +33,7 @@ type NearProviderType = NearNetworkConfig | WalletConnection;
 
 `nearProvider`: Whenever send a transaction from Near Protocol, you have to provide [`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig) with keystore provided or [`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/) object
 ## Response
-Please refer to [response type](/SDKs/types#buttertransactionresponse).
+Please refer to [response type](types#buttertransactionresponse).
 
 ## Gas estimation
 Estimate the gas cost for bridge action.

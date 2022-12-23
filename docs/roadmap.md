@@ -30,7 +30,7 @@
   - Develop vault contracts.
   - Develop messenger - an inter-chain program that sends messages across different chains.
 - Launch ButterJS SDK that connects to supported chains.
-- Testing, testing and tesing.
+- Testing, testing and testing.
 - Smart contract audit.
 
 

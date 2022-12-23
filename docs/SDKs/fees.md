@@ -1,4 +1,7 @@
-_# Fees
+---
+sidebar_position: 5
+---
+# Fees
 Butter charges a small fee for bridging and swapping, the fee is mainly used to pre-pay the destination gas fees.
 ## Response Types
 ### `ButterFee`

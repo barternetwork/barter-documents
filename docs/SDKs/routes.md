@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Route
 Butter has built in smart router that will aggregate all the major dex's liquidity from source blockchain and target blockchain, to find the optimal swap route.
 

@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # Cross-Chain Swap
 Butter cross-chain swap allows you to swap any token from any blockchain.
 
@@ -14,8 +17,8 @@ export type SwapRequestParam = {
     options: ButterTransactionOption;
 };
 ```
-`swapRouteStr`: optimal cross-chain swap route based on token and amount provided. You can find how to get the best route [here]()
-<br>
+`swapRouteStr`: optimal cross-chain swap route based on token and amount provided. You can find how to get the best route [here](http://google.ca/)
+<br/>
 `ButterTransactionOption` contains all the necessary information required to complete a transaction:
 
 ```typescript
@@ -30,10 +33,10 @@ export type ButterTransactionOption = {
 type NearProviderType = NearNetworkConfig | WalletConnection;
 ```
 `signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. if you are using ethers.js, provider the `Signer` or `Provider`(view only) object. If your application choose to use web3.js, please provide `Eth` object in order to send a transaction.
-<br>
+<br/>
 `nearProvider`: Whenever send a transaction from Near Protocol, you have to provide `NearNetworkConfig` with keystore provided or `WalletConnection` object
 ## Response
-Please refer to [response type]().
+Please refer to [response type](http://google.ca/).
 
 ## Gas estimation
 ```typescript
@@ -45,7 +48,7 @@ async function gasEstimateSwap({
     amountIn,
     swapRouteStr,
     slippage,
-    options,
+    options
 }: SwapRequestParam): Promise<string>; // estimated gas in string
 ```
 ## Execute Swap
@@ -58,10 +61,10 @@ async function omnichainSwap({
     amountIn, // amount of 'fromToken' to swap
     swapRouteStr,
     slippage, // in bps
-    options,
+    options
 }: SwapRequestParam): Promise<ButterTransactionResponse>;
  ```
-##### Example1: Swap 1 BNB for Matic using web3.js
+#### Example 1: Swap 1 BNB for Matic using web3.js
 
 ```typescript
 // initiate ButterSwap Class
@@ -82,7 +85,7 @@ const swapRequest: SwapRequestParam = {
     slippage: 100, // 1% splippage
     options: {
         signerOrProvider: web3.eth, // here we use web3.js as example
-    },
+    }
 };
 
 const response: ButterTransactionResponse = await butterSwap.omnichainSwap(
@@ -123,7 +126,7 @@ receipt { // web3.js TransactionReceipt
 }
 ```
 
-##### Example2:Swap 1 BNB for Matic using ethers.js
+#### Example 2: Swap 1 BNB for Matic using ethers.js
 
 ```typescript
 import {ButterTransactionReceipt, ButterTransactionResponse} from "./responseTypes";
@@ -163,6 +166,7 @@ receipt {
   gasUsed: string;
   transactionHash: string;
   blockHash?: string;
+  logs?: Log[];
   blockNumber?: number;
   success?: boolean; // 1 success, 0 failed
 }

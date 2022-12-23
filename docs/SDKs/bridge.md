@@ -1,5 +1,8 @@
+---
+sidebar_position: 7
+---
 # Bridge
-Butter Bridge allows bridging supported tokens from one blockchain to another.<br>
+Butter Bridge allows bridging supported tokens from one blockchain to another.
 
 ## Request 
 ```typescript
@@ -27,10 +30,10 @@ type NearProviderType = NearNetworkConfig | WalletConnection;
 
 ```
 `signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. if you are using ethers.js, provider the `Signer` or `Provider`(view only) object. If your application choose to use web3.js, please provide `Eth` object in order to send a transaction.
-<br>
+
 `nearProvider`: Whenever send a transaction from Near Protocol, you have to provide `NearNetworkConfig` with keystore provided or `WalletConnection` object
 ## Response
-Please refer to [response type]().
+Please refer to [response type](http://google.ca/).
 
 ## Gas estimation
 ```typescript
@@ -44,7 +47,6 @@ async function gasEstimateBridgeToken({
     options,
 }: BridgeRequestParam): Promise<string>; // estimated gas in string
 ```
-<a name = "bridgeparam"></a>
 ## Execute Bridge
 ```typescript
 async function bridgeToken({
@@ -54,9 +56,10 @@ async function bridgeToken({
     toChainId,
     toAddress, // recipient address
     amount, // amount of 'fromToken' to bridge
-    options,
-}: BridgeRequestParam): Promise<ButterTransactionResponse>;
- ```
+    options
+}: BridgeRequestParam): Promise<ButterTransactionResponse> {};
+```
+
 ##### Example1: Bridge 1 USDC from Ethereum Mainnet to BSC using web3.js
 
 ```typescript
@@ -145,10 +148,10 @@ console.log("transaction hash", response.hash!)
 
 const receipt: ButterTransactionReceipt = await response.wait!();
 console.log('receipt', receipt)
+```
 
-```
 ##### Output:
-```
+```text
 transaction hash 0x..... 
 receipt {
   to: string;

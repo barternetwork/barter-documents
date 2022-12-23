@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 # Vault Balance
 On each connected blockchain, Butter has a 'Vault' that holds certain amount of token assets that is available to bridge/swap
 

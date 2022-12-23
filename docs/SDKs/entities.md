@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Entites
 Here you can find all entities defined in the SDK.
 

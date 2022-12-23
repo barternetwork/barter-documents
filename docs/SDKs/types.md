@@ -1,4 +1,7 @@
-# Types
+---
+sidebar_position: 4
+---
+# Request and Response
 This section includes the detail of all the request&response types needed while using the SDK.
 
 ## Request Types
@@ -47,9 +50,51 @@ export type NearProviderType = NearNetworkConfig | WalletConnection;
 ```
 
 ## Response Types
-All the response type needed while using the SDK
+All the response type needed interacting the SDK
+### Vault
+#### `VaultBalance`
+```typescript
+interface VaultBalance {
+  token: BaseCurrency; // token in vault
+  balance: string; // amount of token in vault on target chain
+  isMintable: boolean; // if token is mintable by Butter
+}
+```
 
-### `ButterTransactionResponse`
+### Fee Related
+#### `ButterFee`
+
+```typescript
+export interface ButterFee {
+  feeToken: BaseCurrency; // the token that to be charged
+  amount: string; // in minimal unit
+  feeRate: ButterFeeRate; // fee rate inforamtion
+  feeDistribution?: ButterFeeDistribution; // fee distribution inforamtion
+}
+```
+
+#### `ButterFeeRate`
+Fee rate
+```typescript
+export type ButterFeeRate = {
+  lowest: string; // lowest AMOUNT of fee token to be charged
+  highest: string; // highest AMOUNT of fee token to be charged
+  rate: string; // fee rate in bps
+};
+```
+
+#### `ButterFeeDistribution`
+Fee distribution
+```typescript
+export type ButterFeeDistribution = {
+    protocol: string; // protocol rate in bps
+    relayer: string; // relayer rate in bps, prepaid destination gas fee
+    lp: string; // lp fee rate in bps
+};
+```
+
+### Transaction Relation
+#### `ButterTransactionResponse`
 Response datatype when invoke cross-chain bridge/swap
 
 ```typescript
@@ -61,7 +106,7 @@ export interface ButterTransactionResponse {
 ```
 `promiReceipt` is only available when you are using web.js.
 
-### `ButterTransactionReceipt`
+#### `ButterTransactionReceipt`
 Transaction receipt
 ```typescript
 export interface ButterTransactionReceipt {

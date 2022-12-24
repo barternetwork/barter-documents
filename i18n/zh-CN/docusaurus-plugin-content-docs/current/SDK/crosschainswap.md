@@ -1,10 +1,10 @@
 ---
 sidebar_position: 9
 ---
-# Cross-Chain Swap
-Butter cross-chain swap allows you to swap any token from any blockchain.
+# 跨链兑换
+Butter跨链swap允许您从任何区块链上兑换任何代币。
 
-## Request
+## 请求
 ```typescript
 export type SwapRequestParam = {
     fromAddress: string;
@@ -17,9 +17,9 @@ export type SwapRequestParam = {
     options: ButterTransactionOption;
 };
 ```
-`swapRouteStr`: optimal cross-chain swap route based on token and amount provided. Please see how to [get the best route](routes#get-the-best-route)
+`swapRouteStr`：基于代币和提供的金额的最佳跨链互换路线。请参考[如何获得最佳路线](route#获取最佳路径)
 
-`ButterTransactionOption` contains all the necessary information required to complete a transaction:
+`ButterTransactionOption`: 包含完成交易的所有必要信息。
 
 ```typescript
 export type ButterTransactionOption = {
@@ -32,15 +32,16 @@ export type ButterTransactionOption = {
 // when send transaction from Near Protocol
 type NearProviderType = NearNetworkConfig | WalletConnection;
 ```
-`signerOrProvider`: Butter supports both _ethers.js_ and _web3.js_. If you are using ethers.js, provider the [`Signer`](https://docs.ethers.org/v5/api/signer/) object. If your application choose to use web3.js, please provide [`Eth`](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html) object in order to send a transaction.
+`signerOrProvider`。Butter同时支持_ethers.js_和_web3.js_。如果您使用ethers.js，请提供[`Signer`](https://docs.ethers.org/v5/api/signer/)对象。如果您的应用程序选择使用web3.js，请提供[`Eth`](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html)对象，以便发送交易。
 
-`nearProvider`: Whenever send a transaction from Near Protocol, you have to provide [`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig) with keystore provided or [`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/) object
+`nearProvider`: 当从Near协议发送交易时，您必须提供[`NearNetworkConfig`](https://near.github.io/near-api-js/interfaces/connect.ConnectConfig)，并提供keystore或[`WalletConnection`](https://near.github.io/near-api-js/classes/walletAccount.WalletConnection/)对象。
 
-## Response
-Please refer to [response type](types#buttertransactionresponse).
+## 请求返回
+请参考[response type](types#buttertransactionresponse).
 
-## Gas estimation
-Estimate the gas cost of swap transaction
+## 燃料费预估
+预估swap交易的燃料费
+
 ```typescript
 async function gasEstimateSwap({
     fromAddress,
@@ -53,7 +54,7 @@ async function gasEstimateSwap({
     options
 }: SwapRequestParam): Promise<string>; // estimated gas in string
 ```
-## Execute Swap
+## 执行Swap
 ```typescript
 async function omnichainSwap({
     fromAddress,
@@ -66,8 +67,7 @@ async function omnichainSwap({
     options
 }: SwapRequestParam): Promise<ButterTransactionResponse>;
  ```
-#### Example 1: Swap 1 BNB for Matic using web3.js
-
+#### 示例1：将1个BNB换成Matic（web3.js）
 ```typescript
 import {ButterTransactionResponse} from "./responseTypes";
 import {PromiEvent} from "web3-core";
@@ -104,7 +104,7 @@ await promiReceipt
     });
 
 ```
-##### Output:
+##### 输出:
 ```
 hash 0x..... // transaction hash
 receipt { // web3.js TransactionReceipt
@@ -127,7 +127,7 @@ receipt { // web3.js TransactionReceipt
 }
 ```
 
-#### Example 2: Swap 1 BNB for Matic using ethers.js
+#### 例2: 将1个BNB换成Matic（ethers.js）
 
 ```typescript
 import {ButterTransactionReceipt, ButterTransactionResponse} from "./responseTypes";
@@ -158,7 +158,7 @@ const receipt: ButterTransactionReceipt = await response.wait!();
 console.log('receipt', receipt)
 
 ```
-##### Output:
+##### 输出:
 ```
 transaction hash 0x..... 
 receipt {

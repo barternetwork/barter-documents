@@ -14,7 +14,7 @@ Let's see how Butter Bridge works internally through Map Protocol. The diagram b
 As we can see, the whole bridging process is done on-chain and inter-chain solely without any external validator or human being involved. To learn more, please visit [MAP Protocol Website](https://www.maplabs.io).
 ## Butter Swap
 ### About Butter Swap
-Butter Service gives Web3 applications the ability to exchange cross-chain assets in the most secure and efficient way. For example, one use case would be integrating Butter Cross-chain Swap Service into crypto wallets, then their users can easily exchange cross-chain assets in the wallet they use every day. 
+Butter Swap gives Web3 applications and users the ability to exchange cross-chain assets in the most secure and efficient way. For example, one use case would be integrating Butter Cross-chain Swap Service into crypto wallets, then their users can easily exchange cross-chain assets in the wallet they use every day. 
 ![bces comic](/img/butter/bces-comic.png "bces comic")
 
 Most cross-chain exchanges and cross-chain bridges today support only stablecoin exchange, which solves the problem of liquidity and impermanent losses to a certain extend, but also poses a problem. Let's say Alice wants to explore a new blockchain, in order to perform any type of operation on that blockchain, she will need their native coin for gas consumption. And it is meaningless to hold that blockchain's stablecoin since she can't pay for the gas using stablecoin. 

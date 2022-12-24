@@ -1,10 +1,10 @@
 ---
 sidebar_position: 8
 ---
-# Route
-Butter has built in smart router that will aggregate all the major dex's liquidity from source blockchain and target blockchain, to find the optimal swap route.
+# 最佳路径
+Butter有内置的智能路由器，它将从源区块链和目标区块链汇总所有主要dex的流动性，以找到最佳的跨链交换路线。
 
-## Get the best route
+## 获取最佳路径
 ```typescript
 async function getBestRoute(
     fromToken: BaseCurrency,
@@ -12,7 +12,7 @@ async function getBestRoute(
     amountIn: string
 ): Promise<string> 
 ```
-Example: get the best cross-chain route when swapping 1 BNB for MATIC
+示例: 获取兑换1个BNB到Matic的最佳路径
 
 ```typescript
 const router = new ButterSmartRouter();
@@ -25,7 +25,7 @@ const routeStr = await router.getBestRoute(
 
 console.log('routeStr', routeStr);
 ```
-The output would be:
+输出:
 ```json
 {
   "srcChain":[
@@ -129,4 +129,4 @@ The output would be:
   ]
 }
 ```
-Now you get the best cross-chain swap route! This is used for displaying as well as execute a actual cross-chain swap and calculate swap fees.
+您已经得到了最佳的跨链互换路线! 路径可以用来显示或者执行一个实际的跨链互换操作。

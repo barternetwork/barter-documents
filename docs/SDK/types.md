@@ -96,7 +96,17 @@ export type ButterFeeDistribution = {
 };
 ```
 
-### Transaction Relation
+### Best Route
+#### `RouterResponse`
+```typescript
+export type RouteResponse = {
+  data?: string; // json string
+  msg: string;
+  status: number;
+};
+```
+
+### Transaction Response
 #### `ButterTransactionResponse`
 Response datatype when invoke cross-chain bridge/swap
 

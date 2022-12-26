@@ -10,20 +10,30 @@ async function getBestRoute(
     fromToken: BaseCurrency,
     toToken: BaseCurrency,
     amountIn: string
-): Promise<string> 
+): Promise<RouteResponse> 
 ```
-Example: get the best cross-chain route when swapping 1 BNB for MATIC
 
+## Response
+`RouteResponse`
+```typescript
+export type RouteResponse = {
+  data?: string; // json string
+  msg: string;
+  status: number;
+};
+```
+
+Example: get the best cross-chain route when swapping 1 BNB for MATIC
 ```typescript
 const router = new ButterSmartRouter();
 
-const routeStr = await router.getBestRoute(
+const bestRoute = await router.getBestRoute(
     BNB_NATIVE,
     NEAR_NATIVE,
     ethers.utils.parseEther('1')
 )
 
-console.log('routeStr', routeStr);
+console.log('routeStr', bestRoute.data);
 ```
 The output would be:
 ```json

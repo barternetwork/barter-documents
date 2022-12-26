@@ -97,6 +97,17 @@ export type ButterFeeDistribution = {
 };
 ```
 
+### 最佳路径
+#### `RouteResponse`
+
+```typescript
+export type RouteResponse = {
+  data?: string; // json string
+  msg: string;
+  status: number;
+};
+```
+
 ### Bridge/Swap交易返回
 #### `ButterTransactionResponse`
 ```typescript

@@ -10,20 +10,29 @@ async function getBestRoute(
     fromToken: BaseCurrency,
     toToken: BaseCurrency,
     amountIn: string
-): Promise<string> 
+): Promise<RouteResponse> 
+```
+
+## 响应
+```typescript
+export type RouteResponse = {
+  data?: string;
+  msg: string;
+  status: number;
+};
 ```
 示例: 获取兑换1个BNB到Matic的最佳路径
 
 ```typescript
 const router = new ButterSmartRouter();
 
-const routeStr = await router.getBestRoute(
+const bestRoute: RouteResponse = await router.getBestRoute(
     BNB_NATIVE,
     NEAR_NATIVE,
     ethers.utils.parseEther('1')
 )
 
-console.log('routeStr', routeStr);
+console.log('routeStr', bestRoute.data);
 ```
 输出:
 ```json

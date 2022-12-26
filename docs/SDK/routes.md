@@ -23,7 +23,8 @@ export type RouteResponse = {
 };
 ```
 
-Example: get the best cross-chain route when swapping 1 BNB for MATIC
+## Example
+get the best cross-chain route when swapping 1 BNB for MATIC
 ```typescript
 const router = new ButterSmartRouter();
 

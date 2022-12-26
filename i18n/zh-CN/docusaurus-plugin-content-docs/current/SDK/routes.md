@@ -4,7 +4,7 @@ sidebar_position: 8
 # 最佳路径
 Butter有内置的智能路由器，它将从源区块链和目标区块链汇总所有主要dex的流动性，以找到最佳的跨链交换路线。
 
-## 获取最佳路径
+## 获取最佳路径 <a name="bestroute"></a>
 ```typescript
 async function getBestRoute(
     fromToken: BaseCurrency,
@@ -21,7 +21,9 @@ export type RouteResponse = {
   status: number;
 };
 ```
-示例: 获取兑换1个BNB到Matic的最佳路径
+
+## 示例
+获取兑换1个BNB到Matic的最佳路径
 
 ```typescript
 const router = new ButterSmartRouter();

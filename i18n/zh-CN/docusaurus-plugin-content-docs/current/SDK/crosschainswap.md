@@ -17,7 +17,7 @@ export type SwapRequestParam = {
     options: ButterTransactionOption;
 };
 ```
-`swapRouteStr`：基于代币和提供的金额的最佳跨链互换路线。请参考[如何获得最佳路线](route#获取最佳路径)
+`swapRouteStr`：基于代币和提供的金额的最佳跨链互换路线。请参考[如何获得最佳路线](routes#bestroute)
 
 `ButterTransactionOption`: 包含完成交易的所有必要信息。
 

@@ -35,6 +35,22 @@ export type SwapRequestParam = {
 };
 ```
 
+### `PaymentRequestParam`
+The request parameter data structure for omnichain payment.
+```typescript
+export type PaymentRequestParam = {
+    fromAddress: string;
+    paidToken: BaseCurrency; // token user paid
+    paidAmount: string; // in minimal uint
+    toAddress: string; // seller's receiving address 
+    requiredToken: BaseCurrency; // required token by seller
+    requiredAmount: string; // required amount
+    swapRouteStr: string;
+    options: ButterTransactionOption;
+};
+```
+
+
 ### `ButterTransactionOption`
 options needed to do a cross-chain swap
 ```typescript
@@ -108,7 +124,7 @@ export type RouteResponse = {
 
 ### Transaction Response
 #### `ButterTransactionResponse`
-Response datatype when invoke cross-chain bridge/swap
+Response datatype when invoke cross-chain transaction
 
 ```typescript
 export interface ButterTransactionResponse {

@@ -35,9 +35,23 @@ export type SwapRequestParam = {
   options: ButterTransactionOption;
 };
 ```
+### `PaymentRequestParam`
+支付请求参数
+```typescript
+export type PaymentRequestParam = {
+    fromAddress: string;
+    paidToken: BaseCurrency; // token user paid
+    paidAmount: string; // in minimal uint
+    toAddress: string; // seller's receiving address 
+    requiredToken: BaseCurrency; // required token by seller
+    requiredAmount: string; // required amount
+    swapRouteStr: string;
+    options: ButterTransactionOption;
+};
+```
 
 ### `ButterTransactionOption`
-Bridge/Swap的option参数
+Butter交易的option参数
 ```typescript
 export type ButterTransactionOption = {
   signerOrProvider?: Signer | Provider | Eth; // When source chain is EVM provide Ethers.js Signer/Provider or Web3.js Eth info

@@ -4,7 +4,7 @@ sidebar_position: 10
 # 全链支付(Beta)
 Butter全链支付功能允许用户支付任何加密货币，无论商家需要哪条链上的那种加密货币
 
-## 求情
+## 请求
 ```typescript
 export type PaymentRequestParam = {
     fromAddress: string;
